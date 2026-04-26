@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ni">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portafolio Profesional de Kenneth Mena - Ingeniería en Sistemas UCN">
     <title>Kenneth Mena | Ingeniería en Sistemas</title>
 </head>
@@ -16,8 +15,8 @@
             <ul>
                 <li><a href="#quienSoy">Sobre Mí</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#formacion1">Formacion</a></li>
+                <li><a href="#formacion2">Preparacion Tecnica</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
@@ -49,8 +48,8 @@
         </ul>
     </section>
 
-    <section id="galeria">
-        <h2>Formación y Enlaces</h2>
+    <section id="formacion1">
+        <h2>Formación en curso</h2>
         <a href="https://academia-x.com" target="_blank">
             <img src="https://tse4.mm.bing.net/th/id/OIP.YgJsI3BnexDTsaXKz3Ic4QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
                 alt="Logo de Academia X" width="150" height="150">
@@ -73,16 +72,12 @@
             width="100" height="100">
         <img src="assets/Logo/react-icon_svgstack_com_29171775931881.svg" alt=" React"
             width="100" height="100">
-            <img src="assets/Logo/postgre-sql-logo_svgstack_com_29021775931913.svg" alt="SQL"
-            width="100" height="100">
-            <img src="assets/Logo/nodejs-logo_svgstack_com_28911775931940.svg" alt="Node JS"
-            width="100" height="100">
 
     </section>
 
-    <section id="formacion">
+    <section id="formacion2">
         <h2>Preparación Técnica</h2>
-        <table border="1" cellpadding="10">
+        <table border="1" cellspacing="1" cellpadding="10">
             <thead>
                 <tr>
                     <th>Institución</th>
@@ -93,6 +88,13 @@
                 </tr>
             </thead>
             <tbody>
+                <tr>
+                    <td>Coursera</td>
+                    <td>Vibe Coding</td>
+                    <td>Principante</td>
+                    <td>2026</td>
+                    <td>Inteligencia Artificial</td>
+                </tr>
                 <tr>
                     <td>Autodidacta/Youtube</td>
                     <td>Optimización</td>
@@ -147,15 +149,16 @@
                     <td>React</td>
                     <td>En Curso</td>
                     <td>2026</td>
-                    <td>Modularidad</td>
+                    <td>Componentes</td>
                 </tr>
             </tbody>
+            
         </table>
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
-        <form action="#" method="POST">
+        <form action="#" method="post">
             <label for="nombre">Nombre Completo:</label><br>
             <input type="text" id="nombre" name="nombre" placeholder="Ej. Kenneth Mena" required><br><br>
 
@@ -201,7 +204,11 @@
     </footer>
 
 </body>
+<!--
 <style>
+    html {
+   scroll-behavior: smooth;
+}
     nav ul {
         display: flex;
         gap: 5rem;
@@ -211,6 +218,7 @@
         color: black;
         text-decoration: none;
     }
+        
 </style>
-
+-->
 </html>

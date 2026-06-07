@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Portafolio Profesional de Kenneth Mena - Ingeniería en Sistemas UCN">
+    <script src="script.js" defer></script>
     <title>Kenneth Mena | Ingeniería en Sistemas</title>
 </head>
 
@@ -72,6 +73,8 @@
             width="100" height="100">
         <img src="assets/Logo/react-icon_svgstack_com_29171775931881.svg" alt=" React"
             width="100" height="100">
+            <img src="assets/Logo/postgre-sql-logo_svgstack_com_29021775931913.svg" alt=" PostgreSQL"
+            width="100" height="100">
 
     </section>
 
@@ -88,13 +91,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Coursera</td>
-                    <td>Vibe Coding</td>
-                    <td>Principante</td>
-                    <td>2026</td>
-                    <td>Inteligencia Artificial</td>
-                </tr>
+
                 <tr>
                     <td>Autodidacta/Youtube</td>
                     <td>Optimización</td>
@@ -151,63 +148,69 @@
                     <td>2026</td>
                     <td>Componentes</td>
                 </tr>
+                 <tr>
+                    <td>Academia X</td>
+                    <td>SQL</td>
+                    <td>En Curso</td>
+                    <td>2026</td>
+                    <td>Base de datos Relacionales</td>
+                </tr>
             </tbody>
             
         </table>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre Completo:</label><br>
-            <input type="text" id="nombre" name="nombre" placeholder="Ej. Kenneth Mena" required><br><br>
+   <section id="contacto">
+    <h2>Contacto</h2>
+    <form id="formCotizador">
+        <label for="nombre">Nombre Completo:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Kenneth Mena" required><br><br>
 
-            <label for="correo">Correo Electrónico:</label><br>
-            <input type="email" id="correo" name="correo" required><br><br>
+        <label for="correo">Correo Electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
 
-            <label for="telefono">Teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono" ><br><br>
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono"><br><br>
 
-            <label for="servicio">Servicio requerido:</label><br>
-            <select id="servicio" name="servicio">
-                <option value="desarrollo">Desarrollo Web</option>
-                <option value="mantenimiento">Mantenimiento de PC</option>
-                <option value="optimizacion">Optimización Windows</option>
-            </select><br><br>
+        <label for="servicio">Servicio requerido:</label><br>
+        <select id="servicio" name="servicio">
+            <option value="desarrolloWeb">Desarrollo Web (C$ 1800)</option>
+            <option value="mantenimiento">Mantenimiento de PC (C$ 800)</option>
+            <option value="optimizacion">Optimización Windows (C$ 600)</option>
+        </select><br><br>
 
-            <label>Modalidad de trabajo:</label><br>
-            <input type="radio" id="remoto" name="modalidad" value="remoto">
-            <label for="remoto">Remoto</label>
-            <input type="radio" id="presencial" name="modalidad" value="presencial">
-            <label for="presencial">Presencial (Managua)</label><br><br>
+        <label for="cuotas">* Número de cuotas:</label><br>
+        <select id="cuotas" name="cuotas">
+            <option value="1">Pago de contado (1 cuota)</option>
+            <option value="2">2 cuotas</option>
+            <option value="3">3 cuotas</option>
+            <option value="4">4 cuotas</option>
+        </select><br><br>   
 
-            <label>Tecnologías de interés:</label><br>
-            <input type="checkbox" id="html" name="interes" value="html"> <label for="html">HTML/CSS</label>
-            <input type="checkbox" id="react" name="interes" value="react"> <label for="react">React</label>
-            <input type="checkbox" id="sql" name="interes" value="sql"> <label for="sql">SQL (proximamente)</label><br><br>
+        <button type="submit">Calcular Presupuesto</button>
+        <button type="reset">Limpiar</button>
+        <button>  Enviar</button>
+    </form>
 
-            <label for="mensaje">Descripción de su necesidad:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="5" cols="40"
-                placeholder="Escriba aquí los detalles..."></textarea><br><br>
-
-            <button type="submit">Enviar Solicitud</button>
-            <button type="reset">Limpiar Formulario</button>
-        </form>
-    </section>
+    <div id="resultadoCotizacion">
+        <h3> Resumen de tu Presupuesto</h3>
+        <p id="resumenTexto"></p>
+        <div id="detalleCuotas"></div>
+    </div>
+</section>
 
     <hr>
 
     <footer>
         <p>&copy; 2026 <strong>Kenneth Mena</strong> | Estudiante de la Universidad Central de Nicaragua</p>
-        <p>Sitio web desarrollado para el I Examen Parcial de la clase <strong>"Desarrolo de Aplicaciones Web
-                I"</strong>.</p>
+        <p>Sitio web desarrollado para el II Examen Parcial de la clase <strong>"Desarrolo de Aplicaciones Web"</strong>.</p>
     </footer>
 
 </body>
-<!--
+
 <style>
     html {
-   scroll-behavior: smooth;
+   scroll-behavior:smooth;
 }
     nav ul {
         display: flex;
@@ -218,7 +221,13 @@
         color: black;
         text-decoration: none;
     }
+    #resultadoCotizacion{
+         Display: none;
+         margin-top: 20px;
+         padding: 15px; 
+         border: 2px solid #00fd3b; 
+         background-color: #e9f7ef;
         
+    }
 </style>
--->
 </html>

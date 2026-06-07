@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resumenTexto = document.getElementById('resumenTexto');
     const detalleCuotas = document.getElementById('detalleCuotas');
 
-    // Buscamos los botones dentro del formulario por su texto para no fallar
-    // Ya que en tu HTML no les pusiste ID, los agarramos de esta forma con el DOM:
+  
     const botones = form.querySelectorAll('button');
     let btnCalcular = botones[0]; // El primer botón: "Calcular Presupuesto"
     let btnEnviar = botones[2];   // El tercer botón: "Enviar"
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let presupuestoCalculado = false;
     let totalGlobalParaBackend = 0;
 
-    // 1. Lógica para limpiar el DOM al presionar "Limpiar"
+    // Limpiar el DOM al presionar "Limpiar"
     form.addEventListener('reset', () => {
         resultadoDiv.style.display = 'none';
         resumenTexto.innerHTML = "";
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btnCalcular.addEventListener('click', (e) => {
         e.preventDefault(); // Evita que el botón submit por defecto recargue la web
 
-        // Obtener datos del DOM
+        // Obtener datos del formulario a través  del DOM
         const nombre = document.getElementById('nombre').value.trim();
         const telefono = document.getElementById('telefono').value.trim();
         const servicio = document.getElementById('servicio').value;
@@ -68,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const subtotal = (precioBase + cargoExtra) * (1 + ajuste);
-        const totalConIva = subtotal * 1.15; // 15% IVA de Nicaragua
+        const totalConIva = subtotal * 1.15; // 15% 
         const valorCuota = totalConIva / numCuotas;
 
         // Guardamos estados para el botón enviar
@@ -96,11 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
         detalleCuotas.appendChild(lista);
     });
 
-    // 3. Control del botón Enviar (El tercer botón)
+    // 3. Control del botón Enviar 
     form.addEventListener('submit', (e) => {
-        e.preventDefault(); // Frenamos cualquier intento de recarga o redirección masiva
+        e.preventDefault(); // Evita recargar la pagina
 
-        // Si intenta enviar antes de calcular, lo frenamos
         if (!presupuestoCalculado) {
             alert("Error: Primero debe hacer clic en 'Calcular Presupuesto' para procesar los montos.");
             return;
@@ -113,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Metemos el total al objeto que simulará ir al backend
         datosEnvio.totalFinalCordobas = totalGlobalParaBackend.toFixed(2);
 
-        // Imprimimos en consola de manera limpia para el profesor
+        // Imprimimos en consola de manera limpia 
         console.log("=== ENVIANDO DATOS SIMULADOS AL BACKEND ===");
         console.table(datosEnvio);
 

@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (numCuotas === 1) {
             ajuste = -0.10; // 10% Descuento
             textoAjuste = " (10% descuento de contado aplicado)";
-        } else if (numCuotas > 1) {
+        } 
+        else if (numCuotas > 1) {
             ajuste = 0.05;  // 5% Recargo
             textoAjuste = " (5% recargo por financiamiento incluido)";
         }

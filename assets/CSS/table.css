@@ -1,0 +1,28 @@
+
+/* Tabla de Preparación Técnica */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: var(--white);
+}
+
+th, td {
+    border: 1px solid var(--gray2);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--secundario2);
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+tr:nth-child(even) {
+    background-color: var(--white2);
+}
+
+tr:hover {
+    background-color: var(--gray);
+}

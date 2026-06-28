@@ -4,25 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Portafolio Profesional de Kenneth Mena - Ingeniería en Sistemas UCN">
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <script src="/assets/JS/script.js" defer></script>
+    <link rel="stylesheet" href="/assets/CSS/index.css">
     <title>Kenneth Mena | Ingeniería en Sistemas</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>Kenneth Mena - Desarrollador Front-end & Estudiante de Ingeniería</h1>
-        <nav>
-            <ul>
-                <li><a href="#quienSoy">Sobre Mí</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#formacion1">Formacion</a></li>
-                <li><a href="#formacion2">Preparacion Tecnica</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <h1>Kenneth Mena - Desarrollador Front-end & Estudiante de Ingeniería</h1>
+            <nav>
+                <ul>
+                    <li><a href="#quienSoy">Sobre Mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#formacion1">Formacion</a></li>
+                    <li><a href="#formacion2">Preparacion Tecnica</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="/assets/HTML/Cotizador.html">Cotizador de Servicios</a></li>
+
+                </ul>
+            </nav>
+        </header>
 
     <hr>
 
@@ -60,25 +63,22 @@
             <em>Haz clic en el logo para ver mi plataforma de formación.</em>
         </p>
 
-        <img src="assets/Logo/html5-logo_svgstack_com_28511775931695.svg" alt="HTML5"
+        <img src="assets/img/Logos/html5-logo_svgstack_com_28511775931695.svg" alt="HTML5"
             width="100" height="100">
-        <img src="assets/Logo/css-logo_svgstack_com_28131775931871.svg" alt="CSS3"
+        <img src="assets/img/Logos/css-logo_svgstack_com_28131775931871.svg" alt="CSS3"
             width="100" height="100">
-        <img src="assets/Logo/javascript-logo_svgstack_com_28641775931630.svg" alt="Javascript"
+        <img src="assets/img/Logos/javascript-logo_svgstack_com_28641775931630.svg" alt="Javascript"
             width="100" height="100">        
-            <img src="assets/Logo/git-logo-svg_svgstack_com_28381775931685.svg" alt="Git"
+            <img src="assets/img/Logos/Terminal.svg" alt="Terminal">
+            <img src="assets/img/Logos/git-logo-svg_svgstack_com_28381775931685.svg" alt="Git"
             width="100" height="100">
-            <img src="assets/Logo/github-logo_svgstack_com_50361775931677.svg" alt="Github"
+            <img src="assets/img/Logos/github-logo_svgstack_com_50361775931677.svg" alt="Github"
             width="100" height="100">
-            <img src="assets/Logo/vite-js-logo_svgstack_com_31531775931664.svg" alt="Vite"
+            <img src="assets/img/Logos/vite-js-logo_svgstack_com_31531775931664.svg" alt="Vite"
             width="100" height="100">
-            <img src="assets/Logo/python-logo_svgstack_com_29121781999426.svg" alt=" Python"
+        <img src="assets/img/Logos/react-icon_svgstack_com_29171775931881.svg" alt=" React"
             width="100" height="100">
-        <img src="assets/Logo/react-icon_svgstack_com_29171775931881.svg" alt=" React"
-            width="100" height="100">
-            <img src="assets/Logo/postgre-sql-logo_svgstack_com_29021775931913.svg" alt=" PostgreSQL"
-            width="100" height="100">
-            <img src="assets/Logo/jquery-logo-icon_svgstack_com_28631781999484.svg" alt="JQuery"
+            <img src="assets/img/Logos/postgre-sql-logo_svgstack_com_29021775931913.svg" alt=" PostgreSQL"
             width="100" height="100">
 
     </section>
@@ -98,18 +98,11 @@
             <tbody>
 
                 <tr>
-                    <td>Autodidacta/Youtube</td>
-                    <td>Optimización</td>
+                    <td>UNI/Autodidacta/Youtube</td>
+                    <td>Mantenimiento PC/Optimización</td>
                     <td>Intermedio</td>
                     <td>2020</td>
-                    <td>Rendimiento</td>
-                </tr>
-                <tr>
-                    <td>Autodidacta/Youtube</td>
-                    <td>Mantenimiento PC</td>
-                    <td>Intermedio</td>
-                    <td>2020</td>
-                    <td>Hardware</td>
+                    <td>Hardware/software</td>
                 </tr>
                 <tr>
                     <td>UCN</td>
@@ -129,7 +122,7 @@
                     <td>Academia X</td>
                     <td>CSS3</td>
                     <td>Completado</td>
-                    <td>2026</td>
+                    <td>2025</td>
                     <td>Estilos</td>
                 </tr>
                 <tr>
@@ -156,7 +149,7 @@
                  <tr>
                     <td>Academia X</td>
                     <td>SQL</td>
-                    <td>En Curso</td>
+                    <td>Completado</td>
                     <td>2026</td>
                     <td>Base de datos Relacionales</td>
                 </tr>
@@ -165,50 +158,26 @@
         </table>
     </section>
 
-   <section id="contacto">
+  <section id="contacto">
     <h2>Contacto</h2>
-    <form id="formCotizador">
-        <label for="nombre">Nombre Completo:</label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan perez" required><br><br>
-
-        <label for="correo">Correo Electrónico:</label><br>
-        <input type="email" id="correo" name="correo" required><br><br>
-
-        <label for="telefono">Teléfono:</label><br>
-        <input type="tel" id="telefono" name="telefono"><br><br>
-
-        <label for="servicio">Servicio requerido:</label><br>
-        <select id="servicio" name="servicio">
-            <option value="desarrolloWeb">Desarrollo Web (C$ 1800)</option>
-            <option value="mantenimiento">Mantenimiento de PC (C$ 800)</option>
-            <option value="optimizacion">Optimización Windows (C$ 600)</option>
-        </select><br><br>
-
-        <label for="cuotas">* Número de cuotas:</label><br>
-        <select id="cuotas" name="cuotas">
-            <option value="1">Pago de contado</option>
-            <option value="2">2 cuotas</option>
-            <option value="3">3 cuotas</option>
-            <option value="4">4 cuotas</option>
-        </select><br><br>   
-
-        <button type="submit">Calcular Presupuesto</button>
-        <button type="reset">Limpiar</button>
-        <button>  Enviar</button>
+    <form action="https://formspree.io/f/mdapnwwg" method="POST">
+        <label>
+            Correo:
+            <input type="email" name="email" required>
+        </label>
+        <label>
+            Mensaje:
+            <textarea name="mensaje" rows="1" required></textarea>
+        </label>
+        <button type="submit">Enviar</button>
     </form>
-
-    <div id="resultadoCotizacion">
-        <h3> Resumen de tu Presupuesto</h3>
-        <p id="resumenTexto"></p>
-        <div id="detalleCuotas"></div>
-    </div>
 </section>
 
     <hr>
 
     <footer>
         <p>&copy; 2026 <strong>Kenneth Mena</strong> | Estudiante de la Universidad Central de Nicaragua</p>
-        <p>Sitio web desarrollado para el II Examen Parcial de la clase <strong>"Desarrollo de Aplicaciones Web"</strong>.</p>
+        <p>Sitio web desarrollado para el III Examen Parcial de la clase <strong>"Desarrollo de Aplicaciones Web"</strong>.</p>
     </footer>
 </body>
 </html>

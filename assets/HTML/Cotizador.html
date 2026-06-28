@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/JS/script.js" defer></script>
+    <link rel="stylesheet" href="/assets/CSS/index.css">
+    <title>Kenneth Mena | Ingeniería en Sistemas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kenneth Mena - Desarrollador Front-end & Estudiante de Ingeniería</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Sobre Mí</a></li>
+                <li><a href="/index.html">Servicios</a></li>
+                <li><a href="/index.html">Formacion</a></li>
+                <li><a href="/index.html">Preparacion Tecnica</a></li>
+                <li><a href="/index.html">Contacto</a></li>
+                <li><a href="/assets/HTML/Cotizador.html">Cotizador de Servicios</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <form id="FormCotizador">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="telefono">Telefono:</label> <br>
+        <input type="tel" id="telefono" name="telefono" required> <br>
+
+        <label for="servicio">Servicio requerido:</label><br>
+        <select id="servicio" name="servicio">
+            <option value="">Selecciona un servicio...</option>
+        </select><br><br>
+
+        <label for="cantidad">Cantidad:</label><br>
+        <input type="number" id="cantidad" name="cantidad" value="1" min="1"> <br> <br>
+
+        <label for="detalles">Observaciones o detalles:</label><br>
+        <textarea id="detalles" name="detalles" rows="4" cols="50"
+            placeholder="Escribí aquí cualquier detalle adicional..."></textarea>
+        <br><br>
+
+        <label id="etiqueta-precio">Precio:</label>
+        <span id="precio-servicio">C$ 0</span>
+
+        <label id="etiqueta-total">Total:</label>
+        <span id="total-estimado">C$ 0</span> <br><br>
+
+        <button type="submit"> Enviar Cotización </button>
+    </form> <br><br>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 <strong>Kenneth Mena</strong> | Estudiante de la Universidad Central de Nicaragua</p>
+        <p>Sitio web desarrollado para el III Examen Parcial de la clase <strong>"Desarrollo de Aplicaciones Web"</strong>.</p>
+    </footer>
+</body>
+
+</html>

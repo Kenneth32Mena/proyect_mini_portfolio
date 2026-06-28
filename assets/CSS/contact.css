@@ -1,0 +1,86 @@
+
+/* Fomulario */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--black2);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid var(--gray);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--black);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primario);
+    outline: none;
+    box-shadow: 0 0 8px rgba(70, 68, 255, 0.3);
+}
+
+/* Botones */
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primario);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--primario2);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98); 
+}
+
+/* COTIZADOR:*/
+#etiqueta-precio, #etiqueta-total {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#precio-servicio, #total-estimado {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--secundario); 
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}

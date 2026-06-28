@@ -1,0 +1,44 @@
+
+/*
+   Reseteo Basico*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--black2);
+    margin-bottom: 15px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: var(--gray);
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: var(--black2);
+    color: var(--gray);
+    margin-top: 40px;
+    & strong {
+        color: var(--secundario);
+
+    }
+}
+

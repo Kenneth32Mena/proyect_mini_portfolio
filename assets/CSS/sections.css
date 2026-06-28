@@ -1,0 +1,31 @@
+
+
+/* SECCIONES (Index)*/
+section {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--white2);
+    border-radius: 8px;
+    border: 1px solid var(--gray);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+section ul {
+    margin-left: 20px;
+}
+
+/* Logos de Formación */
+#formacion1 {
+    text-align: center;
+}
+
+#formacion1 img {
+    margin: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 8px; 
+}
+
+#formacion1 img:hover {
+    transform: scale(1.15); 
+}

@@ -15,17 +15,20 @@ const catalogoServicios = [
         nombre: "Optimizacion de Sistema Operativo(Windows)",
         precio: 600
     }
-    
 ]
+// Creada con JQuery
+const $select =  $('#servicio');
 
-const $select = $('#servicio');
-catalogoServicios.forEach(function(servicio) {
+
+catalogoServicios.forEach(
+    function(servicio) {
     $select.append(
         $('<option></option>')
             .val(`${servicio.id}`)
             .text(`${servicio.nombre}`)
     );
 });
+// Function para el resultado
 
 function calcularTotal() {
     const servicioSeleccionado = $('#servicio').val();
@@ -42,7 +45,6 @@ function calcularTotal() {
         $('#total-estimado').text('C$ 0');
     }
 }
-
 $('#servicio, #cantidad').on('change input', function() {
     calcularTotal();
 });
@@ -74,6 +76,7 @@ $('#FormCotizador').on('submit', function(event) {
         return;
     }
 
+    
     // Regex para validar el correo
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
@@ -94,16 +97,19 @@ $('#FormCotizador').on('submit', function(event) {
         nombre: nombre,
         email: email,
         telefono: telefono,
-       // servicioId: servicioSeleccionado,
-        cantidad: parseInt(cantidad) || 1,
+        servicioId: servicioSeleccionado,
+        cantidad: parseInt(cantidad),
         detalles: detalles
     };
     
     console.log("=== 🗿🗿SIMULANDO ENVÍO AL BACKEND 🗿🗿===");
-    console.log(`Datos listos para enviar: ${datosCotizacion}`);
     
-    // 3. Alerta al usuario
+    
     alert("¡Validación exitosa! Tu cotización ha sido procesada correctamente.");
+    
+    
+    console.log(`Nombre:${datosCotizacion.nombre}, Email:${datosCotizacion.email}, Telefono:${datosCotizacion.servicioId},Servicio:${datosCotizacion.servicioId}, Cantidad:${datosCotizacion.cantidad},
+    Detalles:${datosCotizacion.detalles}`)
     
 });
 
